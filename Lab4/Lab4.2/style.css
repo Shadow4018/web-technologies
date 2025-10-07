@@ -1,0 +1,33 @@
+.body {
+    text-align: center;
+}
+
+.title{
+    color: red;
+}
+
+.sub-title{
+    font-style: italic;
+}
+
+.ingredient{
+    font-weight: bold;
+}
+
+#underlined{
+    text-decoration: underline;
+}
+
+#crossed{
+    text-decoration: line-through;
+}
+
+#id{
+    background-color: yellow;
+}
+
+#line{
+    background-color: green;
+    width: 50%;
+    size: 7;
+}
