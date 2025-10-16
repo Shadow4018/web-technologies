@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+}
+
+th {
+    color: white;
+    font-style: italic;
+    padding: 15px;
+}
+
+td {
+    padding: 15px;
+    font-size: 16px;
+}
+
+thead th:nth-child(1) { 
+    background: #f2b4b4; 
+}
+thead th:nth-child(2) {
+    background: #eaa0a0; 
+    }
+thead th:nth-child(3) {
+    background: #e08888; 
+}
+thead th:nth-child(4) {
+    background: #cc6f6f; 
+}
+thead th:nth-child(5) {
+    background: #b25454; 
+}
+
+td:first-child {
+    background: #a63d3d;
+    color: white;
+    font-style: italic;
+}
+
+tbody tr td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5) {
+    background: #e49898;
+}
+
+tbody tr + tr td:nth-child(2),
+tbody tr + tr td:nth-child(3),
+tbody tr + tr td:nth-child(4),
+tbody tr + tr td:nth-child(5) {
+    background: #f9d6d6;
+}
+
+tbody tr + tr + tr td:nth-child(2),
+tbody tr + tr + tr td:nth-child(3),
+tbody tr + tr + tr td:nth-child(4),
+tbody tr + tr + tr td:nth-child(5) {
+    background: #e49898;
+}
+
+tbody tr + tr + tr + tr td:nth-child(2),
+tbody tr + tr + tr + tr td:nth-child(3),
+tbody tr + tr + tr + tr td:nth-child(4),
+tbody tr + tr + tr + tr td:nth-child(5) {
+    background: #f9d6d6;
+}
+
+tbody tr + tr + tr + tr + tr td:nth-child(2),
+tbody tr + tr + tr + tr + tr td:nth-child(3),
+tbody tr + tr + tr + tr + tr td:nth-child(4),
+tbody tr + tr + tr + tr + tr td:nth-child(5) {
+    background: #e49898;
+}
+
+
+/* tr:nth-child(even) {
+    background: #f9d6d6;
+}
+tr:nth-child(odd) {
+    background: #e49898;
+} */
