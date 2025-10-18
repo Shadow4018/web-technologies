@@ -5,7 +5,7 @@
         <title>Анкета студента</title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body align="center">
+    <body>
 
     <h1>Student Form</h1>
 
@@ -14,26 +14,26 @@
     <form action="" method="get">
 
         
-        <legend>Personal Data</legend>
         <fieldset>
+            <legend>Personal Data</legend>
             <label for="name1">Name:</label>
-            <input type="text" id="name1" name="name" placeholder="Input Name" required><br><br>
+            <input type="text" id="name1" name="name" placeholder="Input Name" required><br>
 
             <label for="password1">Password:</label>
             <input type="password" id="password1" name="password" 
                     placeholder="Input password" 
                     pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}" 
                     title="Мінімум 6 символів, 1 велика літера, 1 мала літера, 1 цифра" 
-                    required><br><br>
+                    required><br>
 
             <label for="email1">Email:</label>
-            <input type="email" id="email1" name="email" placeholder="Input email" required autocomplete="off"><br><br>
+            <input type="email" id="email1" name="email" placeholder="Input email" required autocomplete="off"><br>
 
             <label for="phone1">Mobile:</label>
-            <input type="tel" id="phone1" name="phone" placeholder="+380..." required><br><br>
+            <input type="tel" id="phone1" name="phone" placeholder="+380..." required><br>
 
             <label for="birth1">Date of Birth:</label>
-            <input type="date" id="birth1" name="birth" required><br><br>
+            <input type="date" id="birth1" name="birth" required><br>
         </fieldset>
 
         <br>
@@ -45,13 +45,13 @@
             <label><input type="radio" name="gender" value="male"> Man</label>
             <label><input type="radio" name="gender" value="female"> Woman</label>
             <label><input type="radio" name="gender" value="other"> Other</label>
-            <label><input type="radio" name="gender" value="helicopter">Helicopter</input></label><br><br>
+            <label><input type="radio" name="gender" value="helicopter">Helicopter</input></label><br>
 
             <p>Choose your favorite genre:</p>
             <label><input type="checkbox" name="subject" value="math"> Fantasy</label>
             <label><input type="checkbox" name="subject" value="cs"> Thriller</label>
             <label><input type="checkbox" name="subject" value="history"> Steampunk</label>
-            <label><input type="checkbox" name="subject" value="english"> Detective</label><br><br>
+            <label><input type="checkbox" name="subject" value="english"> Detective</label><br>
 
             <p>Choose your course:</p>
             <select name="year">
@@ -60,7 +60,7 @@
                 <option value="3">3 course</option>
                 <option value="4">4 course</option>
                 <option value="5">5 course</option>
-            </select><br><br>
+            </select><br>
 
             <p>Choose your favorite programming languages:</p>
             <select name="languages" multiple size="4">
@@ -69,7 +69,7 @@
                 <option value="javascript">JavaScript</option>
                 <option value="c#">C#</option>
                 <option value="python">Python</option>
-            </select><br><br>
+            </select><br>
 
             <p>Groups of languages:</p>
             <select name="grouped">
@@ -83,7 +83,7 @@
                 <option value="java">Java</option>
                 <option value="c#">C#</option>
                 </optgroup>
-            </select><br><br>
+            </select><br>
 
             <p>Where would you like to work?:</p>
             <input list="professions1" name="profession">
@@ -112,38 +112,39 @@
         <input type="file" name="files" accept="audio/*" multiple>
         </fieldset>
 
-        <br><br>
+        <br>
 
         <button type="submit">Send (GET)</button>
         <button type="reset">Clear</button>
     </form>
 
-    <hr><br>
+    <hr>
 
     <!-- POST Form -->
+    <h1>Application form</h1>
     <h2>POST Form</h2>
     <form action="" method="post" enctype="multipart/form-data">
 
-        <legend>Personal Data</legend>
         <fieldset>
+            <legend>Personal Data</legend>
             <label for="name1">Name:</label>
-            <input type="text" id="name1" name="name" placeholder="Input Name" required><br><br>
+            <input type="text" id="name1" name="name" placeholder="Input Name" required><br>
 
             <label for="password1">Password:</label>
             <input type="password" id="password1" name="password" 
                     placeholder="Input password" 
                     pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}" 
                     title="Мінімум 6 символів, 1 велика літера, 1 мала літера, 1 цифра" 
-                    required><br><br>
+                    required><br>
 
             <label for="email1">Email:</label>
-            <input type="email" id="email1" name="email" placeholder="Input email" required autocomplete="off"><br><br>
+            <input type="email" id="email1" name="email" placeholder="Input email" required autocomplete="off"><br>
 
-            <label for="phone1">Mobile:</label>
-            <input type="tel" id="phone1" name="phone" placeholder="+380..." required><br><br>
+            <label for="phone1">Mobile:</label>І
+            <input type="tel" id="phone1" name="phone" placeholder="+380..." required><br>
 
             <label for="birth1">Date of Birth:</label>
-            <input type="date" id="birth1" name="birth" required><br><br>
+            <input type="date" id="birth1" name="birth" required><br>
         </fieldset>
 
         <br>
@@ -155,31 +156,31 @@
             <label><input type="radio" name="gender" value="male"> Man</label>
             <label><input type="radio" name="gender" value="female"> Woman</label>
             <label><input type="radio" name="gender" value="other" checked> Other</label>
-            <label><input type="radio" name="gender" value="helicopter">Helicopter</input></label><br><br>
+            <label><input type="radio" name="gender" value="helicopter">Helicopter</input></label><br>
 
-            <p>Choose your favorite genre:</p>
-            <label><input type="checkbox" name="subject" value="math"> Fantasy</label>
-            <label><input type="checkbox" name="subject" value="cs"> Thriller</label>
-            <label><input type="checkbox" name="subject" value="history"> Steampunk</label>
-            <label><input type="checkbox" name="subject" value="english"> Detective</label><br><br>
+            <p>Your experience?:</p>
+            <label><input type="checkbox" name="subject" value="math">2+ years</label>
+            <label><input type="checkbox" name="subject" value="cs">5+ years</label>
+            <label><input type="checkbox" name="subject" value="history">10+ years</label>
+            <label><input type="checkbox" name="subject" value="english">20+ years</label><br>
 
-            <p>Choose your course:</p>
+            <p>Choose your tier:</p>
             <select name="year">
-                <option value="1">1 course</option>
-                <option value="2" selected>2 course</option>
-                <option value="3">3 course</option>
-                <option value="4">4 course</option>
-                <option value="5">5 course</option>
-            </select><br><br>
+                <option value="1">Intern</option>
+                <option value="2" selected>Junior</option>
+                <option value="3">Middle</option>
+                <option value="4">Senior</option>
+                <option value="5">PM</option>
+            </select><br>
 
-            <p>Choose your favorite programming languages:</p>
+            <p>Choose your programming languages:</p>
             <select name="languages" multiple size="4">
                 <option value="c++">C++</option>
                 <option value="java">Java</option>
                 <option value="javascript">JavaScript</option>
                 <option value="c#">C#</option>
                 <option value="python">Python</option>
-            </select><br><br>
+            </select><br>
 
             <p>Groups of languages:</p>
             <select name="grouped">
@@ -193,9 +194,9 @@
                 <option value="java">Java</option>
                 <option value="c#">C#</option>
                 </optgroup>
-            </select><br><br>
+            </select><br>
 
-            <p>Where would you like to work?:</p>
+            <p>As who would you like to work?:</p>
             <input list="professions1" name="profession">
             <datalist id="professions1">
                 <option value="Software Developer">
