@@ -1,4 +1,4 @@
-div {
+.plan-travel {
     background-color: rgb(255, 165, 0);
     width: 500px;
     padding: 20px;
@@ -17,14 +17,14 @@ ul {
     margin: 0;
 }
 
-.firstLevel > li {
+.first-level > li {
     background-color: rgb(103, 158, 128);
     padding: 0 20px 0  50px;
     background-repeat: no-repeat;
     margin-bottom: 10px;
 }
 
-.secondLevel > li {
+.second-level > li {
     font-size: 18px;
     font-style: italic;
     background-color: rgb(153, 180, 102);
@@ -50,12 +50,12 @@ span {
     background-color: rgb(218, 106, 32);
 }
 
-.prepare {
+.stage {
     background-image: url("images/rule.png"); 
 }
-.rest {
+/* .rest {
     background-image: url("images/rule.png"); 
-}
+} */
 
 .route { 
     background-image: url("images/ad_units.png");
