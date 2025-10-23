@@ -1,0 +1,171 @@
+body {
+    font-family: "Arial";
+    background-color: #f6f8ff;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+
+header {
+    margin-bottom: 25px;
+}
+main::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Clear для підгонки хедера під плаваючі елементи*/
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    border-radius: 50%;
+    border: 3px solid #ff6600;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+}
+
+.menu {
+    float: right; 
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    float: left;
+    margin-left: 15px;
+}
+
+/* забрали відступ у першого елем */
+/* .menu li:first-child {
+    margin-left: 0;
+} */
+
+.menu a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ec783f;
+    color: #000;
+    text-decoration: none;
+}
+
+.blocks-container {
+    padding-top: 10px;
+}
+
+.block {
+    float: left;
+    width: 300px;
+    min-height: 140px;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 20px;
+    font-size: 14px;
+}
+
+.block p {
+    margin: 0;
+}
+
+.block-1 {
+    border: 5px solid #6c6;
+    border-radius: 30px;
+}
+
+.block-2 {
+    border: 5px solid #6c6;
+    border-radius: 60px 0 60px 0;
+}
+
+.block-3 {
+    border: 5px solid #6c6;
+    border-radius: 30px 90px 30px 90px;
+}
+
+.block-4 {
+    border: 10px solid #386;
+    border-right-color: rgb(1, 255, 153);
+    border-left-color: rgb(1, 255, 153);
+    border-radius: 50px;
+}
+
+.block-5 {
+    border: 10px solid #386;
+    border-top-color: rgb(1, 255, 153);
+    border-bottom-color: rgb(1, 255, 153);
+    border-radius: 40% 10px 40% 10px;
+}
+
+.block-6 {
+    border: 10px solid rgb(1, 255, 153);
+    border-left-color: #386;
+    border-bottom-right-radius: 100%;
+}
+
+.block-7 {
+    border-image-slice: 25 25 27 27;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url('images/border-image-1.png');
+    border-style: solid;
+}
+
+.block-8 {
+    border-image-slice: 13 13 13 13;
+    border-image-width: 15px 15px 15px 15px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round;
+    border-image-source: url('images/border-image-1.png');
+    border-style: solid;
+}
+
+.block-9 {
+    border-image-slice: 27 27 27 27;
+    border-image-width: 15px 15px 15px 15px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round;
+    border-image-source: url('images/border-image-1.png');
+    border-style: solid;
+}
+
+.block-11 {
+    border: 12px solid transparent;
+    border-image: url('images/circle.png') 8 round;
+}
+
+.block-10 {
+    border-image-slice: 27 27 27 27;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url(images/paint.png);
+}
+
+.block-12 {
+    border-image-slice: 27 34 27 18;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url(images/long-round.png);
+}
