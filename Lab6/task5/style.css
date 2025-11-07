@@ -101,6 +101,14 @@ header::after {
 }
 
 .block-2 {
+    /* background: 
+            linear-gradient(45deg, #ff00ee 25%, transparent 25%), 
+            linear-gradient(-45deg, #2eddea 25%, transparent 25%),
+            linear-gradient(45deg, #5fe4ee 25%, transparent 25%), 
+            linear-gradient(-45deg, #dc1af6 25%, transparent 25%);
+    background-size: 40px 40px;
+    background-position: 0 0, 20px 0, 20px 20px, 0px 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
     background:
         repeating-linear-gradient(45deg, yellow 0 20px, orange 0 20px, blue 20px 40px),
         radial-gradient(circle at center, #fff 0%, #ccc 0%, #ccc 100%);
@@ -118,6 +126,10 @@ header::after {
 .block-4 {
     background: linear-gradient(to right, orange, blue);
     background-blend-mode: screen;
+    /* background: 
+            linear-gradient(45deg, green 25%, transparent 25%), 
+            linear-gradient(-45deg, yellow 25%, transparent 25%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
 }
 
 .block-5 {
