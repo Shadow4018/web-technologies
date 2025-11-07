@@ -1,0 +1,42 @@
+.container {
+    position: absolute;
+    height: 300px;
+}
+
+.block {
+    position: absolute;
+    width: 250px;
+    height: 100px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    border: 3px solid #333;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.block-blue {
+    background-color: #4A90E2;
+    color: white;
+    top: 160px;
+    left: 410px;
+    z-index: 2;
+}
+
+.block-green {
+    background-color: #388E3C;
+    color: white;
+    top: 80px;
+    left: 600px;
+    z-index: 1;
+}
+
+.block-lightblue {
+    background-color: #B2EBF2;
+    color: black;
+    top: 10px;
+    left: 790px;
+    z-index: 3;
+}
