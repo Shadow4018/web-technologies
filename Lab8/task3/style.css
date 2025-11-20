@@ -1,0 +1,161 @@
+/* ... (всі стилі до .forecast-item залишаються без змін) ... */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-accent: #444;
+    --color-main: #646464;
+}
+
+html {
+    font-family: 'Comic+Relief', sans-serif;
+    color: var(--color-main);
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+.accent-text {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+.sub-text {
+    color: var(--color-main);
+    font-weight: normal;
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 380px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.current-selection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.current-selection h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* ... (всі стилі до .icon-widget залишаються без змін) ... */
+
+.icon-widget {
+    display: flex;
+    align-items: center;
+}
+
+.icon-widget h2 {
+    display: flex;
+    align-items: flex-start;
+    font-size: 48px; /* Зменшено з 52px */
+    line-height: 1;
+    margin: 0;
+}
+
+.icon-widget h2 span.sub-text {
+    font-size: 18px; /* Зменшено з 20px */
+    font-weight: normal;
+    color: var(--color-main);
+    opacity: 0.8;
+    margin-left: 2px;
+}
+
+.icon-widget img {
+    width: 70px; /* Зменшено з 80px */
+    height: 70px; /* Зменшено з 80px */
+    margin-right: 10px;
+}
+
+/* ... (всі стилі після .icon-widget залишаються без змін) ... */
+
+.forecast-list .list-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.stats-list ul {
+    list-style-type: none;
+    font-size: 14px;
+}
+
+.forecast-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.forecast-list {
+    list-style-type: none;
+}
+
+/*
+ * ЗМІНА:
+ * Повертаємося до 3-колонкової верстки
+ */
+.forecast-item {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eee;
+    padding: 8px 5px;
+  /* justify-content: space-between; - Нам це не потрібно */
+}
+
+.forecast-item:last-child {
+    border-bottom: 1px solid #eee;
+}
+
+/* Колонка 1: День */
+.forecast-item span:first-child {
+    flex: 1; /* Займає 1/3 */
+    text-align: left;
+    min-width: 80px;
+}
+
+/* Колонка 2: Іконка + Градуси (внутрішній flex) */
+.temp-list {
+    flex: 1; /* Займає 1/3 */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Центруємо вміст (іконку і градуси) */
+    gap: 10px;
+}
+
+.temp-list ul {
+    list-style-type: none;
+}
+
+.temp-list li:first-child {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+/* Колонка 3: Пилок */
+.pollen-count {
+    flex: 1; /* Займає 1/3 */
+    text-align: right;
+}
