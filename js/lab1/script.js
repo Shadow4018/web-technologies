@@ -1,5 +1,5 @@
 let element = document.getElementsByClassName('my-class')[0];
 
-element.addEventListener('mouseout', function() {
-    console.error('Бодянич');
-});
+element.onmouseout = function() {
+    console.error('Hello World! Bogdan');
+};
