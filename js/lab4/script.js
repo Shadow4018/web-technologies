@@ -1,18 +1,18 @@
 function task1 (fruit_array) {
     console.log("TASK-1");
-    // task1
+    // task1 - remove last element and print it
     let last_fruit = fruit_array.pop();
     console.log("Task 1.1:", last_fruit);
 
-    //task2
-    fruit_array.push("painapple");
+    //task2 - add pineapple at the beginning
+    fruit_array.unshift("pineapple");
     console.log("Task 1.2: ", fruit_array);
 
-    //task3
+    //task3 - sort in reverse order
     fruit_array.sort().reverse();
     console.log("Task 1.3: ", fruit_array);
 
-    //task4
+    //task4 - search for 'apple' index
     // array.indexof(item)
     for(let i = 0; i < fruit_array.length; i++) {
         if(fruit_array[i] === "apple") {
@@ -24,73 +24,77 @@ function task1 (fruit_array) {
 
 function task2 (color_array) {
     console.log("TASK-2");
-    //task1
+    //task1 - find longest and shortest
     let longest = color_array[0];
+    let shortest = color_array[0];
     for(let i = 0; i < color_array.length; i++) {
         if(color_array[i].length > longest.length) {
             longest = color_array[i];
         }
+        if(color_array[i].length < shortest.length) {
+            shortest = color_array[i];
+        }
     }
-    console.log("Task 2.1: ", longest);
+    console.log("Task 2.1: ", longest, " ", shortest);
 
-    //task2
+    //task2 - filter colors that contain 'blue'
     console.log("Task 2.2: ", color_array.filter(color => color.includes("blue")));
 
-    //task3
+    //task3 - join colors into a string
     let result = color_array.join(", ");
     console.log("Task 2.3: ", result);
 }
 
 function task3 (object_array) {
     console.log("TASK-3");
-    //task1
+    //task1 - sort by name
     object_array.sort((a, b) => a.name.localeCompare(b.name));
     console.log("Task 3.1: ", object_array);
 
-    //task2
+    //task2 - filter developers
     console.log("Task 3.2: ", object_array.filter(obj => obj.position === "developer"));
 
-    //task3
+    //task3 - filter objects with age > 30
     console.log("Task 3.3: ", object_array.filter(obj => obj.age > 30));
 
-    //task4
+    //task4 - add new object to array
     object_array.push({name: "Smith", age: 28, position: "tester"});
     console.log("Task 3.4: ", object_array);
 }
 
 function task4 (student_array) {
     console.log("TASK-4");
-    //task1
+    //task1 - filter students whose name is not "Alex"
     console.log("Task 4.1: ", student_array.filter(student => student.name !== "Alex"));
 
-    //task2
+    //task2 - add new student to array
     student_array.push({name: "Bob", age: 18, course: 1});
     console.log("Task 4.2: ", student_array);
 
-    //task3
+    //task3 - sort students by age in descending order
     student_array.sort((a, b) => b.age - a.age);
     console.log("Task 4.3: ", student_array);
 
-    //task4
+    //task4 - filter students who are in course 3
     console.log("Task 4.4: ", student_array.filter(student => student.course === 3));
 }
 
 function task5 (array) {
     console.log("TASK-5");
-    //task1
+    //task1 - create new array with squares of original array
     console.log("Task 5.1: ", array.map(num => num * num));
 
-    //task2
+    //task2 - filter even numbers
     console.log("Task 5.2: ", array.filter(num => num % 2 === 0));
 
-    //task3
+    //task3 - calculate sum of all numbers
     console.log("Task 5.3: ", array.reduce((acc, num) => acc + num, 0));
 
-    //task4
+    //task4 - concatenate with another array
     let new_array = [10, 20, 30, 40, 50];
     console.log("Task 5.4: ", array.concat(new_array));
 
-    //task5
+    //task5 - remove 4 elements starting from index 3 and print removed elements
     console.log("Task 5.5: ", array.splice(3, 4));
 }
 

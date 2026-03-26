@@ -12,6 +12,3 @@ let countOFvowel = (vowel, word) => {
     return count;
 }
 console.log(countOFvowel(vowel, word));
-
-// спитати нашо стрілкова функція, якщо можна звичайну зробити?
-// нашо ретурн тоді в стрілкові ну без нього не работає ьоді сенс з стрілкової

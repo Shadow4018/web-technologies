@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <style>
+        .traffic-light-box {
+            width: 150px;
+            height: 350px;
+            margin: auto auto;
+            background: black;
+
+            width: 150px;
+            height: 350px;
+            margin: auto;
+            background: black;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .traffic-light-box div {
+            width: 100px;
+            height: 100px;
+            background: gray;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        .red.on {
+            background: red;
+        }
+
+        .yellow.on {
+            background: yellow;
+        }
+
+        .green.on {
+            background: green;
+        }
+  </style>
+</head>
+<body>
+    <div class="traffic-light-box">
+        <div class="red" id="red-light"></div>
+        <div class="yellow" id="yellow-light"></div>
+        <div class="green" id="green-light"></div>
+    </div>
+
+    <p id="status"></p>
+
+    <button id="next">Наступний стан</button>
+    <button id="changeTime">Змінити час</button>
+
+    <a href="https://youtu.be/dQw4w9WgXcQ?si=6qqqGUkjOtWEiVGL" target="_blank">Тиць сюди</a>
+
+    <script src="script.js"></script>
+</body>
+</html>
