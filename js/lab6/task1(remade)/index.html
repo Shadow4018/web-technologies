@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список товарів</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h2>Товари</h2>
+  <div>Сума: <span id="total">0</span> грн</div>
+</header>
+
+<div class="container">
+
+  <div class="filters">
+    <button onclick="setFilter('all')">Всі</button>
+    <button onclick="setFilter('tech')">Tech</button>
+    <button onclick="setFilter('food')">Food</button>
+    <button onclick="setFilter('clothes')">Clothes</button>
+  </div>
+
+  <div class="sort">
+    <button onclick="setSort('price')">Ціна</button>
+    <button onclick="setSort('created')">Дата створення</button>
+    <button onclick="setSort('updated')">Дата оновлення</button>
+    <button onclick="resetSort()">Скинути</button>
+  </div>
+
+  <div id="empty"></div>
+  <div class="products" id="products"></div>
+
+  <button class="add-btn" onclick="openModal()">Додати товар</button>
+
+</div>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <form id="form">
+      <input required placeholder="Назва" id="name"><br><br>
+      <input required type="number" placeholder="Ціна" id="price"><br><br>
+
+      <select id="category">
+        <option value="tech">Tech</option>
+        <option value="food">Food</option>
+        <option value="clothes">Clothes</option>
+      </select><br><br>
+
+      <input required placeholder="URL картинки" id="image"><br><br>
+
+      <button type="submit">Зберегти</button>
+      <button type="button" onclick="closeModal()">Закрити</button>
+    </form>
+  </div>
+</div>
+
+<div id="toast" class="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

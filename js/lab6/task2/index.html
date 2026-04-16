@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мій Список Справ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Список завдань</h1>
+        </header>
+
+        <main>
+            <form id="js-todo-form" class="todo-input-section">
+                <input type="text" id="js-todo-input" placeholder="Що потрібно зробити?" required minlength="2">
+                <button type="submit" class="btn btn-primary">Додати</button>
+            </form>
+
+            <div class="sort-controls">
+                <span>Сортувати за:</span>
+                <button class="btn-link active" data-sort="createdAt">Датою створення</button>
+                <button class="btn-link" data-sort="completed">Станом виконання</button>
+                <button class="btn-link" data-sort="updatedAt">Датою оновлення</button>
+            </div>
+
+            <ul id="js-todo-list" class="todo-list">
+                </ul>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

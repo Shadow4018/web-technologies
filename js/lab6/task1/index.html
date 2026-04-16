@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab6</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Каталог товарів</h1>
+        <div class="total-price-wrapper">
+            Загальна вартість: <span id="js-total-price">0.00</span> ₴
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="controls-section">
+        <h3>Фільтрація за категорією</h3>
+        <div id="js-filter-buttons" class="button-group">
+            <button class="btn btn-secondary active" data-category="all">Всі</button>
+            <button class="btn btn-secondary" data-category="Електроніка">Електроніка</button>
+            <button class="btn btn-secondary" data-category="Одяг">Одяг</button>
+            <button class="btn btn-secondary" data-category="Дім">Дім</button>
+        </div>
+        <button id="js-reset-filter" class="btn btn-outline">Скинути фільтр</button>
+        </section>
+
+        <section class="controls-section">
+            <h3>Сортування</h3>
+            <div class="button-group">
+                <button class="btn btn-secondary" data-sort="price">За ціною</button>
+                <button class="btn btn-secondary" data-sort="createdAt">За датою створення</button>
+                <button class="btn btn-secondary" data-sort="updatedAt">За датою оновлення</button>
+            </div>
+            <button id="js-reset-sort" class="btn btn-outline">Скинути сортування</button>
+        </section>
+
+        <section id="js-product-list" class="product-grid">
+            <p id="js-empty-message" class="empty-list-text">Наразі список товарів пустий. Додайте новий товар.</p>
+        </section>
+
+        <div class="add-action-wrapper">
+            <button id="js-add-product-btn" class="btn btn-primary btn-large">Додати новий товар</button>
+        </div>
+    </main>
+
+    <div id="js-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 id="js-modal-title">Додати товар</h2>
+            <form id="js-product-form">
+                <div class="form-group">
+                    <label for="productName">Назва товару</label>
+                    <input type="text" id="productName" name="productName" required minlength="3">
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">Ціна (₴)</label>
+                    <input type="number" id="productPrice" name="productPrice" step="0.01" required min="0">
+                </div>
+                <div class="form-group">
+                    <label for="productCategory">Категорія</label>
+                    <select id="productCategory" name="productCategory" required>
+                        <option value="">Оберіть категорію</option>
+                        <option value="Електроніка">Електроніка</option>
+                        <option value="Одяг">Одяг</option>
+                        <option value="Дім">Дім</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="productImage">URL зображення</label>
+                    <input type="url" id="productImage" name="productImage" required placeholder="https://example.com/image.jpg">
+                </div>
+                <div class="modal-actions">
+                    <button type="button" id="js-close-modal" class="btn btn-secondary">Скасувати</button>
+                    <button type="submit" class="btn btn-primary">Зберегти</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="js-snackbar" class="snackbar"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
